@@ -40,6 +40,7 @@
         <a href="https://bing.com">Bing</a> |
         <a href="https://amazon.com">Amazon</a>
     </nav>
+
     <main>
         <!-- Repeated Headings -->
         <section>
@@ -165,7 +166,6 @@
     </main>
 
     <!-- Table 2-->
-     <!-- Second Table Example -->
     <section>
         <h2>Second Table Example</h2>
         <table>
@@ -205,7 +205,6 @@
             </tfoot>
         </table>
     </section>
-
 
     <!-- Form -->
     <section>
@@ -267,7 +266,144 @@
         <circle cx="60" cy="60" r="40" stroke="black" fill="red"></circle>
     </svg>
 
-</main>
+    <!-- More HTML Tags Practice (Added) -->
+
+    <section>
+        <h2>More HTML Tags Practice</h2>
+
+        <!-- Audio Tag -->
+        <audio controls>
+            <source src="Assets/audio/sample.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- Video Tag -->
+        <video width="320" height="240" controls>
+            <source src="Assets/video/sample.mp4" type="video/mp4">
+        </video>
+
+        <!-- Track Tag -->
+        <video width="300" controls>
+            <source src="Assets/video/sample-video.mp4" type="video/mp4">
+            <track src="Assets/captions/captions.vtt" kind="subtitles" srclang="en" label="English">
+        </video>
+
+        <!-- Picture Tag -->
+        <picture>
+            <source srcset="Assets/images/img1.png" media="(min-width: 800px)">
+            <source srcset="Assets/images/img3.png" media="(min-width: 500px)">
+            <img src="Assets/images/img2.png" alt="Responsive Image">
+        </picture>
+
+        <!-- Figure & Figcaption -->
+        <figure>
+            <img src="https://picsum.photos/200/150?random" alt="Example">
+            <figcaption>This is a figure caption.</figcaption>
+        </figure>
+
+        <!-- Iframe Tag -->
+        <iframe src="https://www.wikipedia.org" width="300" height="200"></iframe>
+
+        <!-- Embed Tag -->
+        <embed src="Assets/pdf/sample.pdf" type="application/pdf" width="300" height="200">
+
+        <!-- Object Tag -->
+        <object data="Assets/images/img2.png" type="image/png" width="300" height="200"></object>
+
+        <!-- Map and Area -->
+        <img src="https://picsum.photos/300/200" usemap="#imgmap">
+        <map name="imgmap">
+            <area shape="rect" coords="0,0,100,100" href="https://google.com">
+            <area shape="circle" coords="150,100,50" href="https://youtube.com">
+        </map>
+
+        <!-- Dialog Tag -->
+        <dialog open>
+            This is a dialog example.
+        </dialog>
+
+        <!-- Template Tag -->
+        <template id="temp">
+            <p>This is template content.</p>
+        </template>
+
+        <!-- Preformatted Text -->
+        <pre>
+            Line 1
+            Line 2
+            Line 3
+        </pre>
+
+        <!-- Blockquote Tag -->
+        <blockquote>
+            This is a blockquote example.
+        </blockquote>
+
+        <!-- Cite Tag -->
+        <p>This work is written by <cite>Usama Akram</cite></p>
+
+        <!-- Address Tag -->
+        <address>
+            Written by Usama Akram<br>
+            Faisalabad, Pakistan
+        </address>
+
+        <!-- Time Tag -->
+        <p>Current time is: <time datetime="2025-11-18">18 Nov 2025</time></p>
+
+        <!-- Output Tag -->
+        <form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+            <input type="number" id="a" value="10">
+            <input type="number" id="b" value="20">
+            = <output name="result"></output>
+        </form>
+
+        <!-- Datalist Tag -->
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Opera">
+        </datalist>
+
+        <!-- Optgroup -->
+        <select>
+            <optgroup label="German Cars">
+                <option>Audi</option>
+                <option>Mercedes</option>
+            </optgroup>
+            <optgroup label="Japanese Cars">
+                <option>Toyota</option>
+                <option>Honda</option>
+            </optgroup>
+        </select>
+
+        <!-- Colgroup -->
+        <table>
+            <colgroup>
+                <col span="1" style="background-color:lightgray">
+                <col span="1" style="background-color:lightblue">
+            </colgroup>
+            <tr><td>Cell 1</td><td>Cell 2</td></tr>
+        </table>
+
+        <!-- Small Tag -->
+        <p>This is <small>small text</small> example.</p>
+
+        <!-- Del Tag -->
+        <p>Price: <del>$100</del> $80</p>
+
+        <!-- U Tag -->
+        <p>This is an <u>underlined</u> word.</p>
+
+        <!-- Script Tag -->
+        <script>
+            console.log("Script tag example");
+        </script>
+
+        <!-- Noscript Tag -->
+        <noscript>Your browser does not support JavaScript.</noscript>
+
+    </section>
 
 <footer>
     <p>Created by Usama Akram - 2025</p>
